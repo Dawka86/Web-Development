@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 
 app.post("/submit", (req, res) => {
   const randomNameFirst = adj[Math.floor(Math.random() * adj.length)];
-  const randomNameSecond = adj[Math.floor(Math.random() * adj.length)];
+  const randomNameSecond = noun[Math.floor(Math.random() * noun.length)];
   res.render("index.ejs", {randomN: randomNameFirst, randomS: randomNameSecond})
 
 });
